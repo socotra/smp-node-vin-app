@@ -1,0 +1,62 @@
+{
+  "name": "vin-smp",
+  "version": "0.1.0",
+  "changeLogFile": "./CHANGELOG.md",
+  "releaseNotesFile": "./ReleaseNotes.md",
+  "env": {
+    "key-one": "key-one",
+    "key-two": "key-two"
+  },
+  "config": {
+    "fields": [
+      {
+        "name": "field-select",
+        "title": "Sample Select field",
+        "type": "select",
+        "hint": "Select the correct value",
+        "values": [
+          {
+            "text": "Default",
+            "value": ""
+          },
+          {
+            "text": "One",
+            "value": "1"
+          },
+          {
+            "text": "Two",
+            "value": "2"
+          }
+        ]
+      },
+      {
+        "name":"field-text",
+        "title": "Sample text field",
+        "type": "text"
+      },
+      {
+        "name":"field-password",
+        "title": "Sample password field",
+        "type": "password"
+      },
+      {
+        "name": "vehicle-vin",
+        "title": "Vin",
+        "type": "mapped",
+        "hint": "Which field in the policy has the VIN number?"
+      },
+      {
+        "name": "vehicle-make",
+        "title": "Vehicle Make",
+        "type": "mapped",
+        "hint": "Field in the policy where vehicle make result will be saved."
+      },
+      {
+        "name": "vehicle-license",
+        "title": "Vehicle License",
+        "type": "mapped",
+        "hint": "Field in the policy where vehicle license plate result will be saved."
+      }
+    ]
+  }
+}
